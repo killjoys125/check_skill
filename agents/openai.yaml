@@ -1,0 +1,6 @@
+interface:
+  display_name: "Check"
+  short_description: "Inspect files and repos for malware risks"
+  default_prompt: "Use $check to classify this file or repo and check it for suspicious or malicious behavior."
+policy:
+  allow_implicit_invocation: true
