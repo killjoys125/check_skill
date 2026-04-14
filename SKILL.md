@@ -1,6 +1,6 @@
 ---
 name: check
-description: Classify suspicious files, repos, binaries, and archives, then triage them for malware indicators, secrets, obfuscation, and unsafe execution behavior. Use when an untrusted download, script, installer, program, or repository needs a fast safety check.
+description: Classify suspicious files, repos, binaries, and archives, then triage them for malware indicators, secrets, obfuscation, and unsafe execution behavior. Install `magika` with `pipx install magika`, `pip install magika`, or the official installer script. Use when an untrusted download, script, installer, program, or repository needs a fast safety check.
 ---
 
 # Check
@@ -8,6 +8,15 @@ description: Classify suspicious files, repos, binaries, and archives, then tria
 ## Overview
 
 Use this skill for the first pass on untrusted artifacts. It combines file-type classification with malicious-behavior triage so you can quickly tell what something is and whether it looks risky.
+
+## Installation
+
+Install `magika` with one of the official methods:
+
+- `pipx install magika` for a standalone CLI
+- `pip install magika` for the Python package
+- `curl --proto '=https' --tlsv1.2 -LsSf https://securityresearch.google/magika/install.sh | sh` for the prebuilt CLI
+- `powershell -ExecutionPolicy Bypass -c "irm https://securityresearch.google/magika/install.ps1 | iex"` for Windows
 
 ## Workflow
 
